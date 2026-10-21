@@ -1,0 +1,12 @@
+{
+  "name": "aurora-ia-3-netlify",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check public/app.js && node --check netlify/functions/auth.mjs && node --check netlify/functions/chat.mjs && node --check netlify/functions/bootstrap.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.0.0"
+  }
+}
